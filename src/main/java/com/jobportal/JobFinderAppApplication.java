@@ -1,4 +1,4 @@
-package com.job;
+package com.jobportal;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -7,7 +7,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class JobFinderAppApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(JobFinderAppApplication.class, args);
+
+        SpringApplication.run(JobFinderAppApplication.class, args);
+
+        System.out.println("hello Job Seeker!");
 	}
 
 }

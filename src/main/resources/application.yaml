@@ -1,3 +1,38 @@
+server:
+  port: 9999
+  servlet:
+    context-path: /jobapp
+
 spring:
   application:
-    name: JobFinderApp
+    name: JobPortalApp
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/jobportal_db
+    username: shankar
+    password: Sh9560@@##
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    open-in-view: false
+    properties:
+      hibernate:
+        format_sql: true
+  security:
+    user:
+      name: shanky
+      password: shanky@123
+
+logging:
+  level:
+    root: INFO
+    org.springframework.security: DEBUG
+    org.hibernate.SQL: DEBUG
+
+app:
+  pagination:
+    default-page-size: 10
+    max-page-size: 50
